@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">G Store</string>
+    <string name="logo_content_desc">G Store Logo</string>
+    <string name="copyright">© Mrudul Jade. All rights reserved.</string>
+    <string name="login">LOGIN</string>
+    <string name="cancel">CANCEL</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login_anotation">Welcome Back</string>
+</resources>
