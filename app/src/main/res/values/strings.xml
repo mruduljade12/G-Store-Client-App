@@ -3,8 +3,12 @@
     <string name="logo_content_desc">G Store Logo</string>
     <string name="copyright">© Mrudul Jade. All rights reserved.</string>
     <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
     <string name="cancel">CANCEL</string>
     <string name="username">User Name</string>
     <string name="password">Password</string>
     <string name="login_anotation">Welcome Back</string>
+    <string name="register_anotation">Welcome To Our Store</string>
+    <string name="go_to_register_page">if you do not have an account?</string>
+    <string name="go_to_login_page">if you already have an account?</string>
 </resources>

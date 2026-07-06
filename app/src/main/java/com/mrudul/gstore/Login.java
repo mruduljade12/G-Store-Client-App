@@ -1,6 +1,8 @@
 package com.mrudul.gstore;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Login extends AppCompatActivity {
 
     private EditText username,password;
-    private AppCompatButton loginBtn,cancelBtn;
+    private AppCompatButton loginBtn,lCancelBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +30,10 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-        username = findViewById(R.id.userName);
-        password = findViewById(R.id.password);
+        username = findViewById(R.id.l_username);
+        password = findViewById(R.id.l_password);
         loginBtn = findViewById(R.id.loginBtn);
-        cancelBtn = findViewById(R.id.cancelBtn);
+        lCancelBtn = findViewById(R.id.lCancelBtn);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,10 +48,21 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this,"fill the missing fields",Toast.LENGTH_SHORT).show();
                 } else {
 
-                    // logic for login
+                    // logic for login and navigate to main activity.
                     Toast.makeText(Login.this,name,Toast.LENGTH_SHORT).show();
                     Toast.makeText(Login.this,pass,Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(Login.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
+            }
+        });
+
+        lCancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

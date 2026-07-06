@@ -11,4 +11,5 @@
     <color name="login_btn_left">#9CED4B</color>
     <color name="login_btn_right">#42E2B5</color>
     <color name="login_btn_border">#1DA981</color>
+    <color name="link">#BA73D9</color>
 </resources>
